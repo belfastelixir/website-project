@@ -14,12 +14,19 @@ The website will then injest this API.
 
 ## Developing
 
-To start the app:
+### Natively
 
+  
+  * export your env vars via `local.env.template` (this isn't loaded so amend, copy, paste and execute). 
   * `mix deps.get`
   * `mix ecto.setup`
   * `cd assets && npm install`
   * `mix phx.server`
+
+### Docker
+
+  * `docker-compose build`
+  * `docker-compose up`
 
 Visit [`localhost:4000`](http://localhost:4000).
 
